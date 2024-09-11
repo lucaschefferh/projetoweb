@@ -27,6 +27,7 @@
 body {
   /*background color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "inter", sans-serif;
@@ -34,7 +35,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   height: 712px;
   margin: 56px auto 0px auto;
   padding: 0px 24px;
@@ -77,10 +79,10 @@ body * {
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
+  animation: slide-back 4s;
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 #switch span {
   display: block;
@@ -145,4 +147,20 @@ ul li a:hover {
   justify-content: center;
   font-weight: bold;
   font-size: 14px;
+}
+@keyframes slide-in {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
 }
