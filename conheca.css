@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+body {
+  background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 180px 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  padding: 0 70px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 120%;
+}
+
+a {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 360px 24px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-weight: 500;
+}
