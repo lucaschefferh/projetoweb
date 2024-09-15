@@ -79,7 +79,7 @@ body * {
   position: absolute;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-back 4s;
+  animation: slide-back 0.4s;
 }
 .light #switch button {
   animation: slide-in 0.4s forwards;
